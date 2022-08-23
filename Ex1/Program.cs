@@ -7,7 +7,7 @@ int CountEven()
 {
     Console.WriteLine ("Введите числа через пробел");
     string numbers = Console.ReadLine();
-    int [] array = Array.ConvertAll(numbers.Split(),int.Parse);
+    int [] array = Array.ConvertAll(numbers.Split(", "),int.Parse);
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
